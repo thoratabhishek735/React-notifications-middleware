@@ -18,6 +18,9 @@ const UserForm = ({ User, setIsEditing }) => {
             name: name,
             job: job,
           });
+
+          setName("");
+          setJob("");
         }
       }}
     >

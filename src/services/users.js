@@ -11,6 +11,9 @@ const baseUrl = "https://reqres.in/api";
 export const GetUsers = async dispatch => {
   try {
     // api call
+    const headers = {
+      entity: "USERS",
+    };
     const { data } = await axios.get(`${baseUrl}/unknown`);
     dispatch(setUsers(data.data));
   } catch {
